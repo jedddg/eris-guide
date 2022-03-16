@@ -1,3 +1,6 @@
+# Project Status
+### This is not ready yet! This guide is in its early development and is yet to receive more content!
+
 # eris-guide
 
 Holding your hand throughout the Eris experience.
