@@ -1,6 +1,6 @@
-# :book: Introduction
+# Introduction
 
-Discord.js isn't for you but you are finding it hard to learn Eris? This guide is meant to help newcomers into Eris.
+Discord.js isn't for you but you are finding it hard to learn Eris? This guide is meant to help newcomers who are interested in Eris.
 
 Before starting this guide, make sure you have a basic understanding of JavaScript. This guide will **not** cover the depths of this package - just the basics.
 
@@ -13,14 +13,13 @@ Need to learn JavaScript? Check these out:
 
 You should also get comfortable with reading documentation from [Eris' official documentation](https://abal.moe/Eris/docs/), as it will help you get around how the wrapper works and is used.
 
-This guide will cover three main topics:
+This guide will cover the following topics:
 
  * Installing our dependencies and preparing our workspace
- * Creating our Discord App and work with the Discord portal
  * Making a bot and registering slash commands
 
-If you have any other questions with Eris, feel free to join [the Discord Community](https://dsc.gg/argonbots) and ask your question away.
+If you have any other questions with Eris, feel free to join [the Discord Community](https://discord.gg/rpNVWbJTwe) and ask your question away.
 
 If you want anything else explained on this website, make a discussion on [the GitHub](https://github.com/jedddg/eris-guide/discussions).
 
-Without further ado, [let's get started](/home/getting-started.md).
+Without further ado, let's get started.
