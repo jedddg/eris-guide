@@ -73,15 +73,12 @@ const client = new Client(`Bot ${config.token}`);
 client.on("ready", () => {
     console.log("Ready");
 
-    client.createGuildCommand(
-        config.guildId,
-        {
-            name: "ping",
-            description: "pong",
-            defaultPermission: true,
-        },
-        Constants.ApplicationCommandTypes.CHAT_INPUT
-    );
+    client.createGuildCommand(config.guildId, {
+        name: "ping",
+        description: "pong",
+        type: Constants.ApplicationCommandTypes.CHAT_INPUT,
+        defaultPermission: true,
+    });
 });
 
 client.connect();
@@ -96,7 +93,7 @@ But how can we use these slash commands to run a piece of code?
 To respond to slash commands, we need to listen to the `Client#interactionCreate` event.
 
 ```js
-client.on("interactionCreate", (interaction) => {});
+client.on("interactionCreate", async (interaction) => {});
 ```
 
 _Empty interactionCreate event_
@@ -112,7 +109,9 @@ To get the command name, we can access the data property from interaction. `inte
 Here is an example of that:
 
 ```js
-client.on("interactionCreate", (interaction) => {
+const { CommandInteraction } = require("eris");
+
+client.on("interactionCreate", async (interaction) => {
     if (!(interaction instanceof CommandInteraction)) return;
 
     await interaction.defer();
