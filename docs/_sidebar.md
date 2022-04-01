@@ -1,4 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-* Home
-    * [Introduction](home/introduction.md "An introduction to the Eris guide")
+-   Home
+    -   [Introduction](home/introduction.md "An introduction to the Eris guide")
+    -   [Prerequisities](home/prerequisites.md "Prerequisites for using Eris")
+    -   [Coding](home/coding.md "Coding the bot")
